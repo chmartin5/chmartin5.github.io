@@ -1,0 +1,159 @@
+body{
+width: 850px; 
+margin: auto;
+background-color: rgb(220,220,220);
+font-family: sans-serif;
+}
+
+#image_cv{
+padding-bottom:15px;
+display: inline-block;
+width: 100px;
+vertical-align: middle;
+}
+
+#name{
+font-size:3.2em;
+margin-left:30px;
+display: inline-block; 
+vertical-align: middle;
+}
+
+#adress{
+display: inline-block;    
+list-style-type: none;
+vertical-align: middle;
+text-align:right;
+width: 300px;
+}
+
+.logo{
+width:20px;
+height:20px;
+vertical-align:middle;
+}
+
+.partt{
+
+width: 35%;
+clear: both;
+display: inline-block;
+border-top: 3px solid navy;
+padding-top:15px;
+padding-bottom:15px;
+float: left;
+}
+
+.partc {
+
+width: 65%;
+display: inline-block;
+border-top: 3px solid navy;
+padding-top:15px;
+padding-bottom:15px;
+float: right;}
+
+h2{
+text-transform: uppercase;
+font-size: 1.1em;
+color: rgb(0,96,191);
+font-weight: bold;
+}
+
+.hsa, h3{
+text-transform: uppercase;
+font-size: 15px;
+color: rgb(187,0,0);
+text-decoration:none;
+}
+
+.links{
+text-decoration: none;
+color: black;
+}
+
+.links:hover, .mail:hover, .len:hover, .hsa:hover{
+text-decoration:underline;
+}
+
+.links:visited{
+text-decoration: none;
+color: teal;
+}
+
+#newed, #newworkexp, #contactme{
+border: groove 3px green;
+border-radius: 5px;
+width: 300px;
+text-align:center;
+padding-bottom: 10px;
+margin: auto;
+}
+
+form{
+text-transform: uppercase;
+color: rgb(187,0,0);
+font-size: 0.8em;
+}
+
+textarea{
+width: 250px;
+height: 100px;
+}
+
+input{
+width: 250px;
+}
+
+.button{
+width: 100px;
+color: rgb(187,0,0); 
+}
+
+em{
+font-weight: bold;
+text-transform: uppercase;
+font-style: normal;
+}
+
+header{
+border-bottom: 3px solid navy;
+}
+
+.mail{
+color:black;
+text-decoration: none;
+}
+
+.mail:visited{
+color: black;
+text-decoration:none;
+}
+
+
+#encre{
+text-align:center;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.len{
+text-transform: uppercase;
+font-size: 1.1em;
+color: rgb(0,96,191);
+text-decoration: none;
+font-weight: bold;
+}
+
+ul{
+list-style-type:square;
+}
+
+ol{
+list-style-type:none;
+}
+
+th,td{
+width:250px;
+text-align:center;
+}

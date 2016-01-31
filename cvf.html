@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="utf-8"/>
+		<title>CV Charlotte Martin</title>
+		<link rel="stylesheet" href="stylef.css" />
+		<script type="text/javascript" src="scriptf.js"></script>
+	</head>
+	
+	<body>
+
+        <header> <!-- Presentation : image and list for the adress-->
+		<img id="image_cv" src="portrait.jpg" alt="Charlotte Martin" />
+		<p id="name">Charlotte Martin</p>
+		<ul id="adress">
+			<li><img src="maps.png" alt="maps" class="logo" />32 rue du Fer a Moulin</li>
+			<li>75005 Paris</li>
+			<li><img src="tel2.png" alt="tel" class="logo" />06.85.59.49.00</li>
+			<li><img src="email.png" alt="email" class="logo" /><a class="mail" href="#cont">chmartin@ece.fr</a></li>
+        </ul>
+		</header>
+		
+		
+		<p id="encre">  <!-- link to the other parts of the page-->
+				<a class="len" href="#edu">Education</a>||
+				<a class="len" href="#worke">Work Experience</a>||
+				<a class="len" href="#ski">Skills</a>||
+				<a class="len" href="#inte">Interests</a>||
+				<a class="len" href="#cont">Contact</a>||
+		</p>
+		
+
+		<article> 
+		<div class="partt"><h2 id="edu">Education</h2><a class="hsa" href="#" onclick="PutMask('led')"> Hide/Show</a> <br/><a class="hsa" href="#" onclick="PutMask('newed')">ADD A NEW SCOLARSHIP</a></div>
+			<div class="partc">
+			<ul id="led">
+				<li><em>Since 2013</em>: <a class="links" href="http://www.ece.fr">ECE Paris </a>: IT Technology</li>
+				<li><em>2011-2013</em>: Scientific preparatory classes at Marcelin Berthelot high school</li>
+				<li><em>2011</em>:Baccalaureat in sciences (equivalent of a A-levels)</li>
+			</ul>
+		
+		<!-- Education: unordered list. To add a scolarship, use of form. Style= display:none because it is hidden when we load the page.-->
+		
+		<div id="newed" style="display: none;">
+		<h3>ADD A NEW SCOLARSHIP</h3>
+		<form method="post" action="traitement.php">
+			<label for="yearsco">Year</label><br/>
+				<input type="text" name="yearsco" id="yearsco"/><br/>
+			<label for="namesco">Name</label><br/>
+				<input type="text" name="namesco" id="namesco"/><br/>
+			<input class="button" type="button" value="ADD !" onclick="AddSco()" />
+		</form>
+		</div>
+		</div>
+		</article>
+		
+	
+		 
+		<article>
+		<div class="partt"> <h2 id="worke">Work Experience</h2><a class="hsa" href="#" onclick="PutMask('lworkexp')"> Hide/Show</a> <br/><a class="hsa" href="#" onclick="PutMask('newworkexp')">Add a new work experience</a> </div>
+		
+		<div class="partc">
+		<dl id="lworkexp"> 
+			<dt><em>July/August 2014</em>: Intership at <a class="links" href="http://www.tns-sofres.com">TNS SOFRES</a></dt>
+				<dd>Data capture and phone calls.</dd>
+			<dt><em>2013-2014</em>: Private lessons</dt>
+				<dd>Maths and physics' lessons to children from 14 to 17 years-old.</dd>
+			<dt><em>2010</em>: Waitress at VGA St-Maur's bar</dt>
+				<dd>Service of drinks at the end of every match.</dd>
+		</dl>
+		
+		
+		<aside>
+		<div id="newworkexp" style="display: none;">
+		<h3>Add a new work experience</h3>
+		<form method="post" action="traitement.php">
+			<label for="yearexp">Year</label><br/>
+				<input type="text" name="yearexp" id="yearexp"/><br/>
+			<label for="nameexp">Name of the work</label><br/>
+				<input type="text" name="nameexp" id="nameexp"/><br/>
+			<label for="desexp">Description of the work</label><br/>
+				<input type="text" name="desexp" id="desexp"/><br/>
+			<input class="button" type="button" value="ADD !" onclick="AddWork()" />
+		</form>
+		</div>
+		</aside>
+		
+		</div>
+		</article>
+	
+	<article>
+	<div class="partt"> <h2 id="ski">Skills</h2><a class="hsa" href="#" onclick="PutMask('lskills')">Hide/Show</a></div>
+		<div class="partc">
+		<table id="lskills">  <!-- Table for a presentation in rows-->
+			<tr>
+				<th>LANGUAGE SKILLS</th>   
+				<th>I.T. SKILLS</th>  
+			</tr>
+			<tr>
+				<td>French: native language</td>
+				<td>Microsoft Office</td>
+			</tr>
+			<tr>
+			<td>English: good level</td> 
+			<td>C, JAVA, SQL</td>   
+			</tr>
+		</table>
+		</div>
+	</article>
+
+	<article>	
+		
+		<div class="partt"> <h2 id="inte">Interests / Soft skills</h2><a class="hsa" href="#" onclick="PutMask('lint')">Hide/Show</a></div>
+	
+		<div class="partc">
+		<ol id="lint"> 
+			<li><em>Tennis</em>: Competition level</li>
+			<li><em>Traveling</em>: USA, Europe, Thailand</li>
+		</ol>
+		</div>
+	</article>		
+		
+	<footer>  <!-- At the end (footer) : form to contact me : every label will be required-->
+		<div class="partt"><h2 id="cont">Contact me !</h2><a class="hsa" href="#" onclick="PutMask('contactme')">Hide/Show </a></div>
+		<div class="partc">
+			
+			<form id="contactme" method="post" action="traitement.php">
+				<h3>Contact me !</h3>
+				<label for="mymail">E-mail:</label><br/>
+				<input type="email" name="mymail" id="mymail" placeholder="e-mail" required/> 
+			<br/>
+			
+			<label for="subject">Subject:</label><br/>
+			<input type="text" name="sujbet" id="subject" required/>
+			<br/>
+		
+			<label for="message">Message:</label><br/>
+			<textarea name="message" id="message" placeholder="Message" required></textarea>
+			<br/>
+			
+			<input class="button" type="submit" value="SEND !" onclick="check()"  /><br/>
+			
+			</form>
+		</div>
+	</footer>
+	</body>
+</html>
