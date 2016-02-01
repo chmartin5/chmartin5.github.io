@@ -6,7 +6,6 @@
 		<meta charset="utf-8"/>
 		<title>CV Charlotte Martin</title>
 		<link rel="stylesheet" href="stylef.css" />
-		<script type="text/javascript" src="scriptf.js"></script>
 	</head>
 	
 	<body>
@@ -24,10 +23,11 @@
 		
 		
 		<p id="encre">  <!-- link to the other parts of the page-->
-				<a class="len" href="#edu">Education</a>||
-				<a class="len" href="#worke">Work Experience</a>||
-				<a class="len" href="#ski">Skills</a>||
-				<a class="len" href="#inte">Interests</a>||
+				<a class="len" href="#edu">Education</a> ||
+				<a class="len" href="#worke">Work Experience</a> ||
+				<a class="len" href="#ski">Skills</a> ||
+				<a class="len" href="#inte">Interests</a> ||
+				<a class="len" href="#contactme">Contact</a>
 		</p>
 		
 
@@ -101,7 +101,31 @@
 			<li><em>Traveling</em>: USA, Europe, Thailand</li>
 		</ol>
 		</div>
-	</article>		
+	</article>	
+
+	<footer>  <!-- At the end (footer) : form to contact me : every label will be required-->
+		<div class="partt"><h2 id="cont">Contact me !</h2></div>
+		<div class="partc">
+			
+			<form id="contactme" method="post" enctype="text/plain" action="mailto:charlotte.martin.1@hotmail.fr">
+				<h3>Contact me !</h3>
+				<label for="mymail">E-mail:</label><br/>
+				<input type="email" name="mymail" id="mymail" placeholder="e-mail" required/> 
+			<br/>
+			
+			<label for="subject">Subject:</label><br/>
+			<input type="text" name="sujbet" id="subject" required/>
+			<br/>
+		
+			<label for="message">Message:</label><br/>
+			<textarea name="message" id="message" placeholder="Message" required></textarea>
+			<br/>
+			
+			<input class="button" type="submit" value="SEND !"/><br/>
+			
+			</form>
+		</div>
+	</footer>	
 
 	</body>
 </html>
